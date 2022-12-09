@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=100%, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="">
+    <meta name="description" content="">
+    <meta property="og:image" content="images/logo/ronca.png">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type"   content="website" />
+    <meta property="og:url"    content="https://ecommerce.ronca1862.it" />
+    <meta property="og:locale" content="it_IT" />
+
+    <meta name="google" content="notranslate">
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <title>Ronca</title>
+    <!-- Main css styles -->
+    <link rel="stylesheet" media="all" href="/assets/application-f557f424c449a9da275b13369dbb98c61ca07f109472bdc865134f1986f7e0ac.css" data-turbolinks-track="true" />
+    <style>
+      .navy-bg, .fc-state-active  {
+        background-color: #1d1d1b !important;
+      }
+
+      a {
+        color: #555555;
+      }
+      a:hover {
+        color: #ff0000 !important;
+      }
+
+      .btn-primary {
+        color: #ffffff;
+        background-color: #1d1d1b;
+        border-color: #000000;
+      }
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
+        background-color: #1d1d1b;
+        border-color: #000000;
+        color: #ffffff;
+      }
+      .nav > li.active {
+        border-left: 4px solid #1d1d1b;
+      }
+      .nav > li:hover {
+        /* background: #292929; */
+      }
+
+      .note-editing-area a {
+        color: blue;
+      }
+
+      .chosen-container .chosen-results li.active-result:hover {
+        background-color: #1d1d1b;
+      }
+
+      .chosen-container .chosen-results li.result-selected {
+        background-color: #1d1d1b;
+      }
+
+      .popover-title {
+        background-color: #1d1d1b;
+        color: white;
+      }
+
+      
+
+    </style>
+
+    <!-- Main javascript files -->
+    <meta name="action-cable-url" content="wss://ecommerce.ronca1862.it/cable" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5V7Yx1NP6iHXFrfbcMSNEPvpD1_kJqP0"></script>
+    <script src="/assets/application-60a603dfe17a6b7b755863157bdb00e662b465df3f57e437f08056801ec4f61b.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hQLNXvb5yhoJqhoUFyF/LNKk3ZD1OdldYoYH0DeyHZHCKuzLCJB0zo/Y6vo18d+gjUeUWYUuPwyEcYQjqyhifw==" />
+    <script>
+        // Fix table flickering - double loading
+        /*
+        document.addEventListener("turbolinks:before-cache", function() {
+            //$('.wrapper-content').toggleClass('hidden');
+            console.log("before-cache:" + $('.wrapper-content').attr("class").split(' '));
+        });
+        document.addEventListener("turbolinks:render", function() {
+            $('#side-menu').metisMenu();
+            $('.navbar-minimalize').on('click', function (event) {
+                event.preventDefault();
+                //$("body").toggleClass("fixed-sidebar");
+                $("body").toggleClass("mini-navbar");
+                $("body").toggleClass("body-small");
+                SmoothlyMenu();
+            });
+        });
+        */
+
+    </script>
+</head>
+<body class="">
+  <div class="myspinner">
+   <div class="sk-spinner sk-spinner-double-bounce">
+      <div class="sk-double-bounce1"></div>
+      <div class="sk-double-bounce2"></div>
+    </div>
+  </div>
+  <main></main>
+<!-- Skin configuration box -->
+ <!-- render 'layouts/skinconfig' -->
+
+    <!-- Wrapper-->
+    <div id="wrapper" class="home.index">
+
+      <!-- Navigation -->
+        
+
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center">
+                    <span>
+                        <img class="img-circle " style="width: 48px; height: 48px; margin-left: auto; margin-right: auto;" src="/images/avatars/account/d/38.png" alt="38" />
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">S. Dalla Valentina</strong>
+                            </span> <span class="text-muted text-xs block">Cassa<b class="caret"></b></span>
+                        </span>
+                    </a>
+
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+                        <li><a data-turbolinks="false" href="/accounts/38/edit">Profilo</a></li>
+                        <li><a data-turbolinks="false" href="/accounts/38/edit_password">Cambio password</a></li>
+                        <!--<li><a data-turbolinks="false" href="/displayqr">Autenticazione a due fattori</a>-->
+                        </li>
+                        <li class="divider"></li>
+                        <li><a rel="nofollow" data-method="delete" href="/sign_out">Logout</a></li>
+                    </ul>
+
+                </div>
+                <div class="logo-element">
+                    <img class="img-circle " style="width: 32px; height: 32px; margin-left: auto; margin-right: auto;" src="/images/avatars/account/d/38.png" alt="38" />
+                </div>
+            </li>
+
+            <li class="active">
+              <a data-turbolinks="false" href="/home/index">
+                  <i class="fa fa-home"></i> <span class="nav-label" data-i18n="nav.layouts">Home</span>
+</a>            </li>
+
+            
+                        <li class="">
+              <a><i class="fa fa-calendar-alt"></i> <span class="nav-label" data-i18n="nav.layouts">Agenda</span> <span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level collapse ">
+                  <li class="">
+                    <a data-turbolinks="false" href="/tasks/calendar?company_id=4">Ronca Cerimonia</a>
+                  </li>
+                  <li class="">
+                    <a data-turbolinks="false" href="/tasks/calendar?company_id=5">Ronca Sposo</a>
+                  </li>
+                  <li class="">
+                    <a data-turbolinks="false" href="/tasks/calendar?company_id=1">Ronca Style</a>
+                  </li>
+              </ul>
+            </li>
+
+    <li class="">
+        <a data-turbolinks="false" href="/tasks?status_0=1">
+          <i class="fa fa-tasks"></i> <span class="nav-label" data-i18n="nav.layouts">Attività</span>
+</a>    </li>
+
+
+            
+            
+            
+
+            
+            
+            
+            
+
+                <li class="">
+      <a data-turbolinks="false" href="/contacts">
+        <i class="fa fa-address-card"></i> <span class="nav-label" data-i18n="nav.layouts">Contatti</span>
+</a>    </li>
+
+      <li class="">
+        <a data-turbolinks="false" href="/ceremonies">
+          <i class="fa fa-ring"></i> <span class="nav-label" data-i18n="nav.layouts">Cerimonie</span>
+</a>      </li>
+
+      <li class="">
+        <a data-turbolinks="false" href="/events">
+          <i class="fa fa-calendar-week"></i> <span class="nav-label" data-i18n="nav.layouts">Eventi</span>
+</a>      </li>
+
+            
+            
+
+            
+                  <li class="    ">
+        <a><i class="fa fa-building"></i> <span class="nav-label" data-i18n="nav.dashboard">Anagrafica</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse ">
+          <li class="">
+            <a data-turbolinks="false" href="/companies">Anagrafica</a>
+          </li>
+            <li class="">
+              <a data-turbolinks="false" href="/customers">Clienti</a>
+            </li>
+            <li class="">
+              <a data-turbolinks="false" href="/suppliers">Fornitori</a>
+            </li>
+            <li class="">
+              <a data-turbolinks="false" href="/centers">Sedi</a>
+            </li>
+        </ul>
+      </li>
+
+            
+            
+            
+                <li class="">
+      <a ><i class="fa fa-shopping-cart"></i> <span class="nav-label" data-i18n="nav.dashboard">eCommerce</span> <span class="fa arrow"></span></a>
+      <ul class="nav nav-second-level collapse ">
+
+        <li class="">
+          <a data-turbolinks="false" href="/koomo/products">
+              <span class="nav-label" data-i18n="nav.layouts">Articoli</span>
+</a>        </li>
+
+        <li class="">
+        <a data-turbolinks="false" href="/koomo/transcode_brands">
+            <span class="nav-label" data-i18n="nav.layouts">Brand</span>
+</a>        </li>
+
+        <li class="">
+          <a data-turbolinks="false" href="/koomo/transcode_groups">
+              <span class="nav-label" data-i18n="nav.layouts">Gruppi</span>
+</a>        </li>
+
+        <li class="">
+          <a data-turbolinks="false" href="/koomo/transcode_colors">
+             <span class="nav-label" data-i18n="nav.layouts">Colori</span>
+</a>        </li>
+
+        <li class="">
+          <a data-turbolinks="false" href="/koomo/transcode_sexes">
+             <span class="nav-label" data-i18n="nav.layouts">Sesso</span>
+</a>        </li>
+
+      </ul>
+    </li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+</nav>
+
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg ">
+
+            <!-- Page wrapper -->
+            <div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0"  id="tour-menu">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#" data-turbolinks="false"><i class="fa fa-bars"></i> </a>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+              <span class="m-r-sm text-muted welcome-message" data-i18n="topnav.welcometext">Ronca</span>
+          </li>
+
+
+          <!--
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+  <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+</a>
+<ul class="dropdown-menu dropdown-alerts">
+  <li>
+    <a href="mailbox.html">
+      <div>
+        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+        <span class="pull-right text-muted small">4 minutes ago</span>
+      </div>
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <a href="profile.html">
+      <div>
+        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+        <span class="pull-right text-muted small">12 minutes ago</span>
+      </div>
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <a href="grid_options.html">
+      <div>
+        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+        <span class="pull-right text-muted small">4 minutes ago</span>
+      </div>
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <div class="text-center link-block">
+      <a href="notifications.html">
+        <strong>See All Alerts</strong>
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+  </li>
+</ul>
+          </li>
+          -->
+
+            <li>
+              <a rel="nofollow" data-method="delete" href="/sign_out"><i class="fa fa-power-off fa-15x"></i></a>
+            </li>
+        </ul>
+  </nav>
+</div>
+
+            <!-- Main view  -->
+            
+  <div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-5">
+    <h2>Ciao Stefano</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="/">home</a>
+      </li>
+      <li>
+        <a href="/">Backend</a>
+      </li>
+    </ol>
+  </div>
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search-box">
+  </div>
+
+
+
+  <div class="hidden-xs hidden-sm hidden-md col-lg-3 search-box">&nbsp;
+  </div>
+</div>
+
+
+
+<script>
+
+    $( document ).ready(function() {
+
+        // Instance the tour
+        var tour = new Tour({
+            steps: [
+                {
+                    element: "#step0",
+                    title: "Tour",
+                    content: "Per inserire o pianificare una nuova visita cliccare sul bottone.",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    placement: "left",
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+                    }
+                },
+                {
+                    element: "#step1",
+                    title: "Riepilogo",
+                    content: "Le visite create oggi vengono mostrate in questa sezione. ",
+                    placement: "top",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+                    }
+                },
+                {
+                    element: "#step1b",
+                    title: "Attività",
+                    content: "Nel riepilogo vengono mostrate le visite effettuate o pianificate per oggi. Se una visita pianificata non è stata effettuata o non chiusa con il check-out verrà evidenziata in rosso.",
+                    placement: "bottom",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+                    }
+                },
+                {
+                    element: "#step2",
+                    title: "Visita",
+                    content: "Per (ri) aprire una visita è sufficiente cliccare sul titolo.",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    placement: "top",
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+                    }
+
+                },
+                {
+                    element: "#tour-menu",
+                    title: "Menu",
+                    content: "Qui è possibile accedere ad altre sezione dell'applicazione o effettuare il logout.",
+                    placement: "bottom",
+                    backdrop: true,
+                    backdropContainer: '#wrapper',
+                    onShown: function (tour){
+                        $('body').addClass('tour-open')
+                    },
+                    onHidden: function (tour){
+                        $('body').removeClass('tour-close')
+
+                    }
+                },
+
+
+            ]});
+
+        // Initialize the tour
+        tour.init();
+
+        $('#start-tour').click(function(){
+            console.log('Starting tour...');
+            tour.end();
+            tour.restart();
+
+            // Start the tour
+            // tour.start();
+        })
+
+
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row animated fadeInRight">
+  <div class="col-md-12 col-lg-9" >
+    <!-- Main content -->
+
+
+  </div>
+
+  <div class="col-lg-3 hidden-md" >
+    <!-- Right sidebar -->
+
+  </div>
+
+</div>
+
+
+            <p style="height: 200px">&nbsp;</p>
+
+            <!-- Footer -->
+            <div class="footer hidden-xs hidden-sm">
+  <div class="pull-right ">
+    <small>Giorno: 343 - Settimana: 49 / 2022 | <i class="fa fa-heart" style="color:red"></i> We develop your dreams</small>
+  </div>
+  <div>
+      <small>Ronca 1862 S.r.l. - &copy; 2022
+    -  Lang: it - Browser: it</small><br>
+
+    <!-- Language:
+      Available locales: ["it"]
+      Default locale: it
+      I18n.locale: it
+      Session.locale: 
+      Browser: it
+
+    -->
+  </div>
+</div>
+
+        </div>
+        <!-- End page wrapper-->
+
+        <!-- Right sidebar -->
+        <div id="right-sidebar">
+    <div class="sidebar-container">
+
+        <ul class="nav nav-tabs navs-3">
+
+            <li class="active">
+                <a data-toggle="tab" href="#tab-1">
+                    Notes
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#tab-2">
+                    Projects
+                </a>
+            </li>
+            <li class="">
+                <a data-toggle="tab" href="#tab-3">
+                    <i class="fa fa-gear"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+
+
+            <div id="tab-1" class="tab-pane active">
+
+                <div class="sidebar-title">
+                    <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+                    <small><i class="fa fa-tim"></i> You have 10 new message.</small>
+                </div>
+
+                <div>
+
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a1-3347c503260f35f12e05e4fb8aeee72a8f42c3a6b5d35722bdf2eeb3cc006be9.jpg">
+
+                                <div class="m-t-xs">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+
+                                There are many variations of passages of Lorem Ipsum available.
+                                <br>
+                                <small class="text-muted">Today 4:21 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a2-22c5f70142282015b1aa1e8611a895fed56efb2db0045afe0fa124d2a1973d3c.jpg">
+                            </div>
+                            <div class="media-body">
+                                The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                <br>
+                                <small class="text-muted">Yesterday 2:45 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a3-8dd4e1298cba0e9a96d69480dad8c9eed54d66eeb6c1b8b2f0bd15ea54779b11.jpg">
+
+                                <div class="m-t-xs">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                <br>
+                                <small class="text-muted">Yesterday 1:10 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a4-cdc1ea54c688f34a97c8b4e4ac4d364f17bec50c10c5d3417eb0e128778076ac.jpg">
+                            </div>
+
+                            <div class="media-body">
+                                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                <br>
+                                <small class="text-muted">Monday 8:37 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a8-19ef84b7d694fe0b264a03cf5237e837311e869c0e3779e50e976339749844bb.jpg">
+                            </div>
+                            <div class="media-body">
+
+                                All the Lorem Ipsum generators on the Internet tend to repeat.
+                                <br>
+                                <small class="text-muted">Today 4:21 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a7-c7806379f3161478bd1e297f60f0822b97d7e39c0a2087c0badbafe79c4abef1.jpg">
+                            </div>
+                            <div class="media-body">
+                                Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                <br>
+                                <small class="text-muted">Yesterday 2:45 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a3-8dd4e1298cba0e9a96d69480dad8c9eed54d66eeb6c1b8b2f0bd15ea54779b11.jpg">
+
+                                <div class="m-t-xs">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                                <br>
+                                <small class="text-muted">Yesterday 1:10 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="/assets/a4-cdc1ea54c688f34a97c8b4e4ac4d364f17bec50c10c5d3417eb0e128778076ac.jpg">
+                            </div>
+                            <div class="media-body">
+                                Uncover many web sites still in their infancy. Various versions have.
+                                <br>
+                                <small class="text-muted">Monday 8:37 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="tab-2" class="tab-pane">
+
+                <div class="sidebar-title">
+                    <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                    <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                </div>
+
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Business valuation</h4>
+                            It is a long established fact that a reader will be distracted.
+
+                            <div class="small">Completion with: 22%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                            </div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Contract with Company </h4>
+                            Many desktop publishing packages and web page editors.
+
+                            <div class="small">Completion with: 48%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 48%;" class="progress-bar"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Meeting</h4>
+                            By the readable content of a page when looking at its layout.
+
+                            <div class="small">Completion with: 14%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label label-primary pull-right">NEW</span>
+                            <h4>The generated</h4>
+                            <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                            There are many variations of passages of Lorem Ipsum available.
+                            <div class="small">Completion with: 22%</div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Business valuation</h4>
+                            It is a long established fact that a reader will be distracted.
+
+                            <div class="small">Completion with: 22%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                            </div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Contract with Company </h4>
+                            Many desktop publishing packages and web page editors.
+
+                            <div class="small">Completion with: 48%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 48%;" class="progress-bar"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Meeting</h4>
+                            By the readable content of a page when looking at its layout.
+
+                            <div class="small">Completion with: 14%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label label-primary pull-right">NEW</span>
+                            <h4>The generated</h4>
+                            <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                            There are many variations of passages of Lorem Ipsum available.
+                            <div class="small">Completion with: 22%</div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div id="tab-3" class="tab-pane">
+
+                <div class="sidebar-title">
+                    <h3><i class="fa fa-gears"></i> Settings</h3>
+                    <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                </div>
+
+                <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                            <label class="onoffswitch-label" for="example">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Disable Chat
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                            <label class="onoffswitch-label" for="example2">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Enable history
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                            <label class="onoffswitch-label" for="example3">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Show charts
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                            <label class="onoffswitch-label" for="example4">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Offline users
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                            <label class="onoffswitch-label" for="example5">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Global search
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                            <label class="onoffswitch-label" for="example6">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                    <span>
+                        Update everyday
+                    </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                            <label class="onoffswitch-label" for="example7">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-content">
+                    <h4>Settings</h4>
+                    <div class="small">
+                        I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+    </div>
+    <!-- End wrapper-->
+
+    <!-- Include javascript per-view -->
+    
+
+    <script>
+        $("#messages").mouseenter(function(event){
+            $('#messages.dropdown').addClass('open')
+        });
+
+      toastr.error('Hai già effettuato un accesso.','Ronca').css("width","360px");
+      $('.myspinner').fadeOut(400).toggleClass('sk-loading');
+
+      $('#side-menu').metisMenu();
+
+      $('select').chosen({
+          width: '85%',
+          allow_single_deselect: true,
+          placeholder_text_single: 'Seleziona una voce'
+      });
+
+      $('textarea').summernote({
+          height: 140,
+          donetext: 'Ok',
+          toolbar: [
+              // [groupName, [list of button]]
+              // ['undo', ['undo', 'redo']],
+              ['style', ['bold', 'italic', 'underline','clear']],
+              ['para', ['paragraph', 'ol', 'ul']],
+              ['options', ['fullscreen', 'codeview']],
+              ['insert', ['link']]
+              //['table', ['table']],
+              //['color', ['color']]
+          ],
+          cleaner:{
+              action: 'both', // both|button|paste 'button' only cleans via toolbar button, 'paste' only clean when pasting content, both does both options.
+              newline: '<br>', // Summernote's default is to use '<p><br></p>'
+              notStyle: 'position:absolute;top:0;left:0;right:0', // Position of Notification
+              keepHtml: false, // Remove all Html formats
+              keepOnlyTags: ['<h2>','<p>', '<br>', '<ul>', '<li>', '<b>', '<strong>','<i>', '<a>', '<table>', '<tr>', '<td>'], // If keepHtml is true, remove all tags except these
+              keepClasses: false, // Remove Classes
+              badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], // Remove full tags with contents
+              badAttributes: ['style', 'start'], // Remove attributes from remaining tags
+              limitChars: false, // 0/false|# 0/false disables option
+              limitDisplay: 'html', // text|html|both
+              limitStop: false // true/false
+          }
+      });
+      
+      $(function(){
+          $('.simple_form').on('submit', function(){
+              $('.myspinner').fadeIn(400).toggleClass('sk-loading');
+          })
+      })
+    </script>
+
+</body>
+</html>
